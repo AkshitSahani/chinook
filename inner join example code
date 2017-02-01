@@ -1,0 +1,1 @@
+SELECT p.name, p.id AS playlist_id, t.id AS track_id, t.name AS track_name FROM playlists p INNER JOIN playlists_tracks pt ON p.id = pt.playlist_id INNER JOIN tracks t ON pt.track_id = t.id;
